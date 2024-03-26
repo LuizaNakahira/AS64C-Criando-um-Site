@@ -1,12 +1,38 @@
 Os conteúdos abordado no curso serão:
-1. HTML
-2. CSS
-3. JavaScript
-4. Ensinar a baixar e configurar as IDEs
+(Opcional: Ensinar a planejar a criação de sites utilizando Figma)
+1. Ensinar a baixar e configurar as IDEs
+2. HTML
+3. CSS
+4. JavaScript
 
 Tópico: Ensinar a construir um site do zero (to-do-list)
 
-Disciplina abordada: Programação Web-Front
+Disciplina abordada: Programação Web Front-End
 
 Forma de conteudo: Videos aulas ensinando todos os passos em uma página WEB liberada para o público com textos resumindo cada aula
 e dicas para programar o site e codar no geral.
+
+apresentação do conteúdo:
+
+Configuração das IDEs:
+1. Explicar o que são IDEs, e mostrar como o código pode ser criado sem eles, dessa forma destacando sua importância na simplificação de construção de sites.
+2. Ensinar a instalar o (IDE que será usada no Curso) e fazer uma demonstração simples da navegação(criação de pastas, arquivos, etc.)
+
+HTML:
+1. Ensinar a criar os arquivos html, css e javascript, bem como referenciá-los no arquivo html.
+2. apresentar os elementos básicos do html e dar exemplos de como eram utilizados antes da criação do CSS
+3. demonstrar a utilização do html ao iniciar a construção do to-do-list.
+
+CSS:
+1. apresentar o conceito de CSS e mostrar algumas funções para a estilização de sites.
+2. aplicar a estilização dos arquivos CSS no todo-list.
+
+Javascript:
+1. apresentar o conceito de javascript e como ele é utilizado nos sites atuais.
+2. demonstrar como utilizar javascript para a lógica do to-do-list, como adição e remoção de tarefas.
+3. demonstrar como utilizar javascript para aplicar estilização dinamica no to-do-list, como adição de classes e alteração de atributos em cliques, hover, etc.
+
+Durante todo o projeto, haverá atenção especial para a organização e utilização de boas práticas no código, explicando ao aluno
+como essas boas práticas fazem grande diferença no quesito de compartilhamento de tarefas e leitura de código.
+
+
