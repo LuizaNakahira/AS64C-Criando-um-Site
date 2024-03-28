@@ -15,13 +15,13 @@ e dicas para programar o site e codar no geral.
 Apresentação do conteúdo:
 
 Configuração das IDEs:
-1. Explicar o que são IDEs e mostrar como o código pode ser criado sem elas, dessa forma, destacando sua importância na simplificação de construção de sites.
-2. Ensinar a instalar a IDE (que será usada no Curso) e fazer uma demonstração simples da navegação (criação de pastas, arquivos, etc.)
+1. Explicar o que são IDEs e mostrar como o código pode ser criado sem elas, dessa forma, destacando sua importância na simplificação de construção de sites: 1 hora
+2. Ensinar a instalar a IDE (que será usada no Curso) e fazer uma demonstração simples da navegação (criação de pastas, arquivos, etc.): 1.5 horas
 
 HTML:
-1. Ensinar a criar os arquivos html, css e javascript, bem como referenciá-los no arquivo html.
-2. apresentar os elementos básicos do html e dar exemplos de como eram utilizados antes da criação do CSS
-3. demonstrar a utilização do html ao iniciar a construção do to-do-list.
+1. Ensinar a criar os arquivos html, css e javascript, bem como referenciá-los no arquivo html: 1 hora
+2. apresentar os elementos básicos do html e dar exemplos de como eram utilizados antes da criação do CSS: 1.5 horas
+3. demonstrar a utilização do html ao iniciar a construção do to-do-list. 2 horas
 
 CSS:
 1. apresentar o conceito de CSS e mostrar algumas funções para a estilização de sites.
