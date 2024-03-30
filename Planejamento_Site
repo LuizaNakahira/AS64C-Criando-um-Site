@@ -24,8 +24,40 @@ HTML:
 3. demonstrar a utilização do html ao iniciar a construção do to-do-list. 2 horas
 
 CSS:
-1. apresentar o conceito de CSS e mostrar algumas funções para a estilização de sites. (de 1 a 2 horas para criar o material escrito e vídeo-aulas de 10 a 15 minutos cada)
-2. aplicar a estilização dos arquivos CSS no todo-list. (2 horas para criar o material escrito e vídeo-aulas de no máximo 15 minutos cada)
+1. Estilizar a lista de tarefas (1 hora)*
+   - Definir o estilo da lista (ul ou ol).
+   - Ajustar margens, espaçamentos e bordas conforme necessário.
+   - Escolher uma fonte e tamanho de texto adequados.
+2. Estilizar itens da lista (2 horas)*
+   - Definir o estilo dos itens da lista (li).
+   - Ajustar margens, espaçamentos, bordas e cores de fundo conforme necessário.
+   - Escolher uma fonte e tamanho de texto adequados para os itens da lista.
+3. Estilizar caixa de seleção para completar tarefas (1 hora)*
+   - Estilizar caixas de seleção para cada item da lista.
+   - Definir o estilo para caixa marcada e não marcada.
+   - Adicionar efeitos de hover e foco conforme necessário.
+4. Estilizar botões de ação (2 horas)*
+   - Criar estilos para botões de adicionar, remover e marcar tarefas como concluídas.
+   - Definir cores, tamanhos e efeitos de hover para os botões.
+5. Estilizar entrada de texto para adicionar novas tarefas (1 hora)*
+   - Definir o estilo da caixa de entrada de texto.
+   - Ajustar tamanho, margens e bordas conforme necessário.
+   - Adicionar estilos para o botão de envio de nova tarefa.
+6. Estilizar barra de progresso ou contador de tarefas (2 horas)*
+   - Criar estilos para uma barra de progresso ou contador de tarefas concluídas.
+   - Definir cores, tamanho e posicionamento adequados.
+   - Atualizar dinamicamente com base nas tarefas concluídas.
+7. Estilizar layout responsivo (3 horas)*
+   - Criar estilos para diferentes tamanhos de tela (mobile, tablet, desktop).
+   - Utilizar media queries para ajustar o layout e os estilos conforme necessário.
+   - Testar em diferentes dispositivos e ajustar conforme necessário.
+8. Estilizar animações e transições (4 horas)*
+   - Adicionar transições suaves para hover, foco e alterações de estado.
+   - Criar animações para adicionar, remover ou concluir tarefas.
+   - Testar e ajustar a velocidade e a suavidade das animações.
+9. Estilizar outros elementos (1 hora)*
+   - Estilizar elementos adicionais, como etiquetas de prioridade, notas ou datas.
+   - Ajustar cores, tamanhos e posicionamento conforme necessário.
 
 Javascript:
 1. apresentar o conceito de javascript e como ele é utilizado nos sites atuais.
