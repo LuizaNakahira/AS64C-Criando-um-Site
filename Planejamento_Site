@@ -60,9 +60,19 @@ CSS:
    - Ajustar cores, tamanhos e posicionamento conforme necessário.
 
 Javascript:
-1. apresentar o conceito de javascript e como ele é utilizado nos sites atuais.
-2. demonstrar como utilizar javascript para a lógica do to-do-list, como adição e remoção de tarefas.
-3. demonstrar como utilizar javascript para aplicar estilização dinâmica no to-do-list, como adição de classes e alteração de atributos em cliques, hover, etc.
+1. apresentar o conceito de javascript e como ele é utilizado nos sites atuais: 1 hora
+   Introdução ao JavaScript e sua importância: 20 minutos
+   Breve história e evolução do JavaScript: 20 minutos
+   Exemplos de JavaScript em ação em sites modernos: 20 minutos
+2. demonstrar como utilizar javascript para a lógica do to-do-list, como adição e remoção de tarefas: 2 horas
+   Explicação da estrutura básica de um to-do-list: 30 minutos
+   Implementação da adição de tarefas usando JavaScript: 40 minutos
+   Implementação da remoção de tarefas usando JavaScript: 50 minutos
+3. demonstrar como utilizar javascript para aplicar estilização dinâmica no to-do-list, como adição de classes e alteração de atributos em cliques, hover, etc.: 3 horas
+   Introdução à estilização dinâmica com JavaScript: 30 minutos
+   Adição de classes e estilização baseada em eventos (cliques, hover, etc.): 1 hora e 10 minutos
+   Exemplos avançados de estilização dinâmica e personalização: 1 hora e 20 minutos
+
 
 Durante todo o projeto, haverá atenção especial para a organização e utilização de boas práticas no código, explicando ao aluno
 como essas boas práticas fazem grande diferença no quesito de compartilhamento de tarefas e leitura de código.
