@@ -1,0 +1,54 @@
+/* cor de fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f0fd;
+  }
+  
+  /* estilo do container */
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: #D2E0FB;
+    text-align: center;
+
+  }
+  
+  /* centralizando table */
+  .container table{
+    margin: 0 auto;
+  }
+  .homeTable{
+    margin: 0 auto;
+    text-align: center;
+     border-spacing: 20px; /*espaço entre os tds */
+  }
+
+  .homeTable td{
+
+    background-color: white;
+    width: auto;
+    text-align: center; 
+    vertical-align: middle; 
+    padding: 0.5rem;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+.icon,
+.text {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+ul{
+  text-align: left;
+  list-style-type: none;
+}
+  
+
+  
