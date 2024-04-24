@@ -27,7 +27,8 @@ body {
 
 /* Estilizando os Inpit */
 #senhaInput,
-#loginInput {
+#loginInput,
+#confirmarInput {
   border-radius: 40px;
   border: none;
   width: 100%;
@@ -36,7 +37,8 @@ body {
 }
 
 #loginInput::placeholder,
-#senhaInput::placeholder {
+#senhaInput::placeholder,
+#confirmarInput::placeholder {
   color: black; 
 }
 
