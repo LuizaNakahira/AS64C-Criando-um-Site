@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Tarefas</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-    
-  <div class="container">
-        <input type="text" id="checkListInput" placeholder="Tarefa: "> <!-- provisório para testar a função de adicionar tasks -->
-        <ul id="checkList">
-            <li><label for="ex1">Exemplo1</label><input type="checkbox" id="ex1"></li>
-            <li><label for="ex2">Exemplo2</label><input type="checkbox" id="ex2"></li>
-            <li><label for="ex3">Exemplo3</label><input type="checkbox" id="ex3"></li>
-        </ul>
 
-    <button id="adicionar">Adicionar</button>
+<body>
+
+  <div class="container">
+    <ul id="checkList">
+      <li><input type="checkbox" id="ex1"><label for="ex1">Exemplo1</label></li>
+      <li><input type="checkbox" id="ex2"><label for="ex2">Exemplo2</label></li>
+      <li><input type="checkbox" id="ex3"><label for="ex3">Exemplo3</label></li>
+    </ul>
+
+    <button id="adicionarModal">Adicionar</button>
     <button id="deletar">Deletar</button>
   </div>
 
-  <!-- TODO: criar modais ocultos para adicionar tasks e confirmar sucesso ao adicionar/deletar -->
+  <!-- Modal adicionar tarefa -->
+  <div id="modalAdicionar" class="modal">
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <input type="text" id="checkListInput" placeholder="Tarefa: ">
+      <button id="adicionar">Adicionar</button>
+    </div>
+  </div>
+
+  <!-- Modal Sucesso -->
+  <div id="modalSucesso" class="modal">
+    <div class="modal-content">
+
+      <span class="icon">
+        <svg width="20" height="20">
+          <image id="sucessoIcon" href="" width="20" height="20" /> <!-- href é manipulado no javascript -->
+        </svg>
+      </span>
+      <span id="sucessoMsg">Today</span>
+      <span class="closeModal">&times;</span>
+      <p></p>
+    </div>
+  </div>
   <script src="../script.js"></script>
 </body>
+
 </html>
