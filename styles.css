@@ -1,5 +1,8 @@
-/* cor de fundo */
+/* Cor de fundo e fonte padrão */
 body {
+  
+  
+/*
     font-family: Arial, sans-serif;
     background-color: #e9f0fd;
   }
@@ -14,37 +17,93 @@ body {
     text-align: center;
 
   }
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #e9f0fd;
+}
+
+/* Estilo do container de login */
+.container {
+  display: flex; 
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #d2e0fb;
+  align-items: center; 
+  padding: 50px; 
+  gap: 40px; 
+*/ cssLu
   
-  /* centralizando table */
-  .container table{
-    margin: 0 auto;
-  }
-  .homeTable{
-    margin: 0 auto;
-    text-align: center;
-     border-spacing: 20px; /*espaço entre os tds */
-  }
+}
 
-  .homeTable td{
 
-    background-color: white;
-    width: auto;
-    text-align: center; 
-    vertical-align: middle; 
-    padding: 0.5rem;
-  }
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+
+/* Estilizando os Inpit */
+#senhaInput,
+#loginInput,
+#confirmarInput {
+  border-radius: 40px;
+  border: none;
+  width: 100%;
+  padding: 15px 20px;
   
-  h1 {
-    text-align: center;
-  }
+}
 
+#loginInput::placeholder,
+#senhaInput::placeholder,
+#confirmarInput::placeholder {
+  color: black; 
+}
+
+/* Estilo do botão de login */
+#loginButton {
+  border-radius: 40px;
+  border: none; 
+  background-color: #8EACCD; 
+  color: white; 
+  padding: 10px 40px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#loginButton:hover {
+  background-color: #45a049; 
+}
+
+/* Estilo da tabela de homepage */
+.homeTable {
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 20px; 
+}
+
+.homeTable td {
+  background-color: white;
+  width: auto;
+  text-align: center; 
+  vertical-align: middle; 
+  padding: 0.5rem;
+}
+
+/* Alinhamento central para h1 */
+h1 {
+  text-align: center;
+}
+
+/* Estilos para elementos inline, como ícones e texto */
 .icon,
 .text {
   vertical-align: middle;
   display: inline-block;
 }
 
-ul{
+/* Estilo da lista */
+ul {
   text-align: left;
   list-style-type: none;
 }
@@ -83,6 +142,13 @@ ul{
   text-decoration: none;
   cursor: pointer;
 }
-  
 
-  
+
+p {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #074173;
+}
