@@ -68,8 +68,8 @@ body {
   background-color: white;
   width: auto;
   text-align: center; 
-  vertical-align: middle; 
-  padding: 0.5rem;
+  padding: 0px 70px;
+  border-radius: 20px;
 }
 
 /* Alinhamento central para h1 */
@@ -82,6 +82,7 @@ h1 {
 .text {
   vertical-align: middle;
   display: inline-block;
+  font-size: 20px;
 }
 
 /* Estilo da lista */
