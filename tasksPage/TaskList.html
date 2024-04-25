@@ -7,18 +7,26 @@
   <title>Lista de Tarefas</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-
-<body>
-    <h1>TAREFAS</h1>
-  <div class="container">
+<header id="espacadoHeader">
+  <span class="iconLogin">
+    <svg width="42" height="42">
+    <image href="../images/personal.svg" width="38" height="38"/>
+    </svg>
+  </span>
+</header>
+<body id="espacadoBody">
+  <div class="containerTask">
     <ul id="checkList">
       <li><input type="checkbox" id="ex1"><label for="ex1">Exemplo1</label></li>
       <li><input type="checkbox" id="ex2"><label for="ex2">Exemplo2</label></li>
       <li><input type="checkbox" id="ex3"><label for="ex3">Exemplo3</label></li>
     </ul>
 
+  <div class="botoes">
     <button id="adicionarModal">Adicionar</button>
     <button id="deletar">Deletar</button>
+  </div>
+    
   </div>
 
   <!-- Modal adicionar tarefa -->
@@ -32,15 +40,18 @@
 
   <!-- Modal Sucesso -->
   <div id="modalSucesso" class="modal">
-    <div class="modal-content">
+    <div class="modal-content-sucesso">
+
+      <span class="closeModal">&times;</span>
 
       <span class="icon">
         <svg width="20" height="20">
           <image id="sucessoIcon" href="" width="20" height="20" /> <!-- href é manipulado no javascript -->
         </svg>
+
+        <span id="sucessoMsg">Today</span>
       </span>
-      <span id="sucessoMsg">Today</span>
-      <span class="closeModal">&times;</span>
+    
       <p></p>
     </div>
   </div>

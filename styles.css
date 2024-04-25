@@ -1,10 +1,26 @@
+
+  
+#espacadoHeader{
+  margin-bottom: 70px; 
+}
+
 /* Cor de fundo e fonte padrão */
 body {
   
     font-family: Arial, sans-serif;
     background-color: #e9f0fd;
+   
+}
+
+#espacadoBody{
+  margin-top: 20px;
 }
   
+.iconLogin{
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Estilo do container de login */
 .container {
   display: flex; 
@@ -83,12 +99,20 @@ h1 {
   vertical-align: middle;
   display: inline-block;
   font-size: 20px;
+  text-align: center;
 }
 
 /* Estilo da lista */
 ul {
   text-align: left;
+  padding: 0;
   list-style-type: none;
+
+}
+
+#checkList {
+  display: grid;
+  gap: 10px; 
 }
 
 .modal {
@@ -101,22 +125,53 @@ ul {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+  
 }
 
 .modal-content {
   background-color: #D2E0FB;
-  max-width: 400px;
+  max-width: 300px;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#adicionar{
+  border-radius: 40px;
+  border: none; 
+  background-color: #8EACCD; 
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  max-width: 200px;
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+
+#checkListInput{
+  border-radius: 40px;
+  border: none;
+  padding: 15px 20px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#checkListInput::placeholder {
+  color: black; 
+  text-align: left;
 }
 
 .closeModal {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  display: flex; 
+  justify-content: flex-end;
 }
 
 .closeModal:hover,
@@ -134,4 +189,50 @@ p {
 a {
   text-decoration: none;
   color: #074173;
+}
+
+/*Container tasklist*/
+.containerTask{
+  display: flex; 
+  flex-direction: column;
+  max-width: 250px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #d2e0fb;
+  align-items: center; 
+  padding: 30px 20px;
+}
+
+#adicionarModal,
+#deletar{
+  border-radius: 40px;
+  border: none; 
+  background-color: #8EACCD; 
+  color: white; 
+  padding: 10px 20px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+#adicionarModal:hover,
+#deletar:hover {
+  background-color: #447fbe; 
+}
+
+.botoes{
+  display: flex;
+  gap: 20px;
+}
+
+.modal-content-sucesso{
+  background-color: #FFFFFF;
+  max-width: 300px;
+  margin: 15% auto;
+  padding: 5px 30px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
