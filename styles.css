@@ -1,39 +1,21 @@
 /* Cor de fundo e fonte padrão */
 body {
   
-  
-/*
     font-family: Arial, sans-serif;
     background-color: #e9f0fd;
-  }
-  
-  /* estilo do container */
-  .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #D2E0FB;
-    text-align: center;
-
-  }
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #e9f0fd;
 }
-
+  
 /* Estilo do container de login */
 .container {
   display: flex; 
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #d2e0fb;
   align-items: center; 
   padding: 50px; 
-  gap: 40px; 
-*/ cssLu
-  
+  gap: 40px;   
 }
 
 
@@ -72,7 +54,7 @@ body {
 }
 
 #loginButton:hover {
-  background-color: #45a049; 
+  background-color: #447fbe; 
 }
 
 /* Estilo da tabela de homepage */
