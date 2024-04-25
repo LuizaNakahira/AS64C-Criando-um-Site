@@ -4,6 +4,12 @@
   margin-bottom: 70px; 
 }
 
+#espacadoHeaderHome{
+  margin-bottom: 70px; 
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Cor de fundo e fonte padrão */
 body {
   
@@ -21,6 +27,7 @@ body {
   justify-content: flex-end;
 }
 
+
 /* Estilo do container de login */
 .container {
   display: flex; 
@@ -30,7 +37,7 @@ body {
   border-radius: 30px;
   background-color: #d2e0fb;
   align-items: center; 
-  padding: 50px; 
+  padding: 35px; 
   gap: 40px;   
 }
 
