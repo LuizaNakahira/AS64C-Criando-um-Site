@@ -1,0 +1,290 @@
+#espacadoHeader {
+  margin-bottom: 70px;
+}
+
+#espacadoHeaderHome {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cor de fundo e fonte padrão */
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #e9f0fd;
+
+}
+
+#espacadoBody {
+  margin-top: 20px;
+}
+
+.iconLogin {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* Estilo do container de login */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #d2e0fb;
+  align-items: center;
+  padding: 35px;
+  gap: 40px;
+}
+
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Estilizando os Inpit */
+#senhaInput,
+#loginInput,
+#confirmarInput {
+  border-radius: 40px;
+  border: none;
+  width: 100%;
+  padding: 15px 20px;
+
+}
+
+#loginInput::placeholder,
+#senhaInput::placeholder,
+#confirmarInput::placeholder {
+  color: black;
+}
+
+/* Estilo do botão de login */
+#loginButton {
+  border-radius: 40px;
+  border: none;
+  background-color: #8EACCD;
+  color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#loginButton:hover {
+  background-color: #447fbe;
+}
+
+/* Estilo da tabela de homepage */
+.homeTable {
+  margin: 0 auto;
+  text-align: center;
+  border-spacing: 20px;
+}
+
+.homeTable td {
+  background-color: white;
+  width: auto;
+  text-align: center;
+  padding: 0px 70px;
+  border-radius: 20px;
+  
+}
+
+/* Alinhamento central para h1 */
+h1 {
+  text-align: center;
+}
+
+/* Estilos para elementos inline, como ícones e texto */
+.icon {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.text {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+/* Estilo da lista */
+ul {
+  text-align: left;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+#checkList {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
+  background-color: #D2E0FB;
+  max-width: 300px;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#adicionar {
+  border-radius: 40px;
+  border: none;
+  background-color: #8EACCD;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 200px;
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+
+#checkListInput {
+  border-radius: 40px;
+  border: none;
+  padding: 15px 20px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#checkListInput::placeholder {
+  color: black;
+  text-align: left;
+}
+
+.closeModal {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+p {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #074173;
+}
+
+/*Container tasklist*/
+.containerTask {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  height: 70vh;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #d2e0fb;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  overflow: auto;
+}
+
+#scroll {
+  overflow: auto;
+  max-height: 40vh;
+  width: 60%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #8EACCD; 
+}
+
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+#adicionarModal,
+#deletar {
+  border-radius: 40px;
+  border: none;
+  background-color: #8EACCD;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#adicionarModal:hover,
+#deletar:hover {
+  background-color: #447fbe;
+}
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-content-sucesso {
+  background-color: #FFFFFF;
+  max-width: 350px;
+  height: 20vh;
+  margin: 15% auto;
+  padding: 5px 30px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#sucessoMsg {
+  font-size: 25px;
+  text-align: center;
+}
