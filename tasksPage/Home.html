@@ -13,6 +13,8 @@
         <image href="../images/personal.svg" width="38" height="38"/>
       </svg>
     </span>
+    <!-- Botão de Sair -->
+    <button id="logoutButton">Sair</button>
   </header>
   <table class="homeTable">
     <tr>
@@ -87,7 +89,7 @@
       // Função para redirecionar para a página TaskList
       function redirectToTasksList(category) {
         localStorage.setItem('currentCategory', category);
-        window.location.href = 'TaskList.html';
+        window.location.href = '../tasksPage/TaskList.html';
       }
 
       // Obter os botões que desejamos adicionar comportamento de clique
@@ -99,6 +101,12 @@
           const category = button.dataset.list;
           redirectToTasksList(category);
         });
+      });
+
+      // Adicionar evento de clique ao botão de Sair
+      document.getElementById('logoutButton').addEventListener('click', function() {
+        // Redirecionar para a tela de login
+        window.location.href = '../loginPage/Login.html';
       });
     });
   </script>
