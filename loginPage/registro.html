@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
+  <title>Lista de Tarefas - Registro</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <header>
@@ -17,13 +17,38 @@
   <h3 style="text-align: center; font-weight: 100; font-size: 35px;">Organize-se para um dia mais produtivo.</h3>
   <div class="container">
     <div class="inputGroup">
-      <input type="text" id="loginInput" placeholder="Login:">
-      <input type="text" id="senhaInput" placeholder="Senha:">
-      <input type="text" id="confirmarInput" placeholder="Repita a senha:">
+      <input type="text" id="loginInput" placeholder="Login">
+      <input type="password" id="senhaInput" placeholder="Senha">
+      <input type="password" id="confirmarInput" placeholder="Repita a senha">
     </div>
 
-    <button id="loginButton">Cadastrar</button>
+    <button id="cadastroButton">Cadastrar</button>
   </div>
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginInput = document.getElementById('loginInput');
+      const senhaInput = document.getElementById('senhaInput');
+      const confirmarInput = document.getElementById('confirmarInput');
+      const cadastroButton = document.getElementById('cadastroButton');
+
+      cadastroButton.addEventListener('click', function() {
+        const login = loginInput.value.trim();
+        const senha = senhaInput.value.trim();
+        const confirmar = confirmarInput.value.trim();
+
+        if (senha !== confirmar) {
+          alert('As senhas não coincidem!');
+          return;
+        }
+
+        // Aqui você pode armazenar os dados em localStorage, enviar para o servidor, ou fazer outra ação de cadastro
+        localStorage.setItem('login', login);
+        localStorage.setItem('senha', senha);
+
+        alert('Cadastro realizado com sucesso!');
+        window.location.href = 'login.html'; // Redireciona para a página de login
+      });
+    });
+  </script>
 </body>
 </html>
