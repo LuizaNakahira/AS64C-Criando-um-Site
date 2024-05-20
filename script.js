@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
       modalSucesso.style.display = "block";
       //reseta o valor do input
       checkListInput.value = "";
+      // Salva a lista de tarefas atual no armazenamento local
+      saveTasksToLocalStorage();
     }
   });
 
@@ -51,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     removeTask();
     changeModalSucessoMsg("Deletado com sucesso", "../images/deletadoSucesso.svg");
     modalSucesso.style.display = "block";
+    // Salva a lista de tarefas atual no armazenamento local
+    saveTasksToLocalStorage();
   });
 
   // Adiciona evento de mudança para verificar se há tarefas selecionadas
@@ -70,6 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
       deletarButton.style.display = "none";
       modalSucesso.style.display = "none"; // Esconde o modal se não houver tarefas selecionadas
     }
+    // Salva a lista de tarefas atual no armazenamento local
+    saveTasksToLocalStorage();
   });
 
   function addTask(taskText) {
@@ -113,5 +119,31 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('sucessoMsg').innerText = mensagem;
     document.getElementById('sucessoIcon').setAttribute("href", icon);
   }
+
+  // Salva a lista de tarefas atual no armazenamento local
+  function saveTasksToLocalStorage() {
+    const tasks = [];
+    const taskItems = checkList.querySelectorAll('li');
+    taskItems.forEach(item => {
+      const taskText = item.querySelector('label').textContent;
+      tasks.push(taskText);
+    });
+    const currentCategory = localStorage.getItem('currentCategory');
+    localStorage.setItem(currentCategory, JSON.stringify(tasks));
+  }
+
+  // Carrega a lista de tarefas salva no armazenamento local
+  function loadTasksFromLocalStorage() {
+    const currentCategory = localStorage.getItem('currentCategory');
+    const tasks = JSON.parse(localStorage.getItem(currentCategory));
+    if (tasks) {
+      tasks.forEach(taskText => {
+        addTask(taskText);
+      });
+    }
+  }
+
+  // Carrega as tarefas do armazenamento local quando a página é carregada
+  loadTasksFromLocalStorage();
 
 });

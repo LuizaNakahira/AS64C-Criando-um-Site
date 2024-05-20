@@ -15,6 +15,7 @@
     }
   </style>
 </head>
+
 <body id="espacadoBody">
   <div class="containerTask">
     <header id="espacadoHeaderHome">
@@ -28,9 +29,7 @@
     </header>
 
     <ul id="checkList">
-      <li><input type="checkbox" id="ex1"><label for="ex1">Lavar louça</label></li>
-      <li><input type="checkbox" id="ex2"><label for="ex2">Passear cachorro</label></li>
-      <li><input type="checkbox" id="ex3"><label for="ex3">Estudar</label></li>
+      <!-- List items will be added dynamically using JavaScript -->
     </ul>
 
     <div class="botoes">
@@ -63,6 +62,29 @@
     </div>
   </div>
   <script src="../script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Obter a categoria salva no armazenamento local
+      const currentCategory = localStorage.getItem('currentCategory');
+
+      // Carregar a lista de tarefas com base na categoria
+      if (currentCategory) {
+        const checkList = document.getElementById("checkList");
+
+        // Lógica para carregar a lista de tarefas específica com base na categoria
+        if (currentCategory === 'work') {
+          addTask("Trabalho 1");
+          addTask("Trabalho 2");
+        } else if (currentCategory === 'school') {
+          addTask("Estudar matemática");
+          addTask("Preparar apresentação");
+        }
+        // Adicione mais lógica conforme necessário para outras categorias
+      }
+
+      // Restante do seu script...
+    });
+  </script>
 </body>
 
 </html>
