@@ -23,7 +23,7 @@
               <image href="../images/today.svg" width="52" height="52"/>
             </svg>
           </span>
-          <span class="text">Today</span>
+          <span class="text" id="todayButton">Today</span>
         </p>
       </td>
       <td>
@@ -33,7 +33,7 @@
               <image href="../images/work.svg" width="52" height="52"/>
             </svg>
           </span>
-          <span class="text">Work</span>
+          <span class="text" id="workButton">Work</span>
         </p>
       </td>
     </tr>
@@ -45,7 +45,7 @@
               <image href="../images/planned.svg" width="52" height="52"/>
             </svg>
           </span>
-          <span class="text">Planned</span>
+          <span class="text" id="plannedButton">Planned</span>
         </p>
       </td>
       <td>
@@ -55,7 +55,7 @@
               <image href="../images/school.svg" width="52" height="52"/>
             </svg>
           </span>
-          <span class="text">School</span>
+          <span class="text" id="schoolButton">School</span>
         </p>
       </td>
     </tr>
@@ -67,7 +67,7 @@
               <image href="../images/personal.svg" width="52" height="52"/>
             </svg>
           </span>
-          <span class="text">Personal</span>
+          <span class="text" id="personalButton">Personal</span>
         </p>
       </td>
       <td>
@@ -77,11 +77,26 @@
               <image href="../images/shopping.svg" width="52" height="52"/>
             </svg>
           </span>
-          <span class="text">Shopping</span>
+          <span class="text" id="shoppingButton">Shopping</span>
         </p>
       </td>
     </tr>
   </table>
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Função para redirecionar para a página TaskList
+      function redirectToTasksList() {
+        window.location.href = 'TaskList.html';
+      }
+
+      // Obter os botões que desejamos adicionar comportamento de clique
+      const buttons = document.querySelectorAll('.homeTable .text');
+
+      // Adicionar evento de clique a cada botão
+      buttons.forEach(button => {
+        button.addEventListener('click', redirectToTasksList);
+      });
+    });
+  </script>
 </body>
 </html>
