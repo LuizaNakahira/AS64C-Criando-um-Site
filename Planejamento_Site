@@ -1,4 +1,5 @@
 Os conteúdos abordados no curso serão:
+
 (Opcional: Ensinar a planejar a criação de sites utilizando Figma)
 1. Ensinar a baixar e configurar as IDEs
 2. HTML
@@ -73,7 +74,6 @@ Javascript:
    Adição de classes e estilização baseada em eventos (cliques, hover, etc.): 1 hora e 10 minutos
    Exemplos avançados de estilização dinâmica e personalização: 1 hora e 20 minutos
 
-
 Durante todo o projeto, haverá atenção especial para a organização e utilização de boas práticas no código, explicando ao aluno
 como essas boas práticas fazem grande diferença no quesito de compartilhamento de tarefas e leitura de código.
 
@@ -81,3 +81,4 @@ Divisão conteúdo entre a equipe:
 1. HTML + IDEs: Gustavo.
 2. CSS: Luiza e Tami.
 3: JavaScript: Clara.
+

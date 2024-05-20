@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<header>
+  <span class="iconLogin">
+    <svg width="42" height="42">
+      <image href="../images/personal.svg" width="38" height="38"/>
+    </svg>
+  </span>
+</header>
+<body>
+  <h3 style="text-align: center; font-weight: 100; font-size: 35px;">Organize-se para um dia mais produtivo.</h3>
+  <div class="container">
+    <div class="inputGroup">
+      <input type="text" id="loginInput" placeholder="Login:">
+      <input type="password" id="senhaInput" placeholder="Senha:">
+    </div>
+    <button id="loginButton">Entrar</button>
+    <p><br><strong>Não possui conta? </strong> <a href="link para página de registro">Cadastre-se.</a></p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginInput = document.getElementById('loginInput');
+      const senhaInput = document.getElementById('senhaInput');
+      const loginButton = document.getElementById('loginButton');
+
+      // Adiciona manipuladores de eventos para remover o placeholder quando os campos forem clicados
+      loginInput.addEventListener('focus', function() {
+        loginInput.placeholder = '';
+      });
+
+      senhaInput.addEventListener('focus', function() {
+        senhaInput.placeholder = '';
+      });
+
+      // Adiciona manipuladores de eventos para reaparecer o placeholder quando os campos perderem o foco
+      loginInput.addEventListener('blur', function() {
+        if (loginInput.value === '') {
+          loginInput.placeholder = 'Login:';
+        }
+      });
+
+      senhaInput.addEventListener('blur', function() {
+        if (senhaInput.value === '') {
+          senhaInput.placeholder = 'Senha:';
+        }
+      });
+
+      // Verificação de login e redirecionamento
+      loginButton.addEventListener('click', function() {
+        const loginValue = loginInput.value.trim();
+        const senhaValue = senhaInput.value.trim();
+
+        if (loginValue === 'usuario' && senhaValue === '1234') {
+          window.location.href = '../tasksPage/Home.html'; // Caminho corrigido
+        } else {
+          alert('Usuário ou senha incorretos.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
