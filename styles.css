@@ -65,7 +65,7 @@ body {
 }
 
 /* Estilo do botão de login */
-#loginButton {
+#loginButton, #cadastroButton, #logoutButton {
   border-radius: 40px;
   border: none;
   background-color: #8EACCD;
@@ -75,7 +75,7 @@ body {
   transition: background-color 0.3s;
 }
 
-#loginButton:hover {
+#loginButton:hover, #cadastroButton:hover, #logoutButton:hover {
   background-color: #447fbe;
 }
 
