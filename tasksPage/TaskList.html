@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    #espacadoHeaderHome {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body id="espacadoBody">
+  <div class="containerTask">
+    <header id="espacadoHeaderHome">
+      <a href="Home.html">
+        <span class="iconHome">
+          <svg width="42" height="42">
+            <image href="../images/personal.svg" width="38" height="38"/>
+          </svg>
+        </span>
+      </a>
+    </header>
+
+    <ul id="checkList">
+      <!-- List items will be added dynamically using JavaScript -->
+    </ul>
+
+    <div class="botoes">
+      <button id="adicionarModal">Adicionar</button>
+      <button id="deletar">Deletar</button>
+    </div>
+    
+  </div>
+
+  <!-- Modal adicionar tarefa -->
+  <div id="modalAdicionar" class="modal">
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <input type="text" id="checkListInput" placeholder="Tarefa: ">
+      <button id="adicionar">Adicionar</button>
+    </div>
+  </div>
+
+  <!-- Modal Sucesso -->
+  <div id="modalSucesso" class="modal">
+    <div class="modal-content-sucesso">
+      <span class="closeModal">&times;</span>
+      <span class="icon">
+        <svg width="20" height="20">
+          <image id="sucessoIcon" href="" width="20" height="20" /> <!-- href é manipulado no javascript -->
+        </svg>
+        <span id="sucessoMsg">Today</span>
+      </span>
+      <p></p>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Obter a categoria salva no armazenamento local
+      const currentCategory = localStorage.getItem('currentCategory');
+
+      // Carregar a lista de tarefas com base na categoria
+      if (currentCategory) {
+        const checkList = document.getElementById("checkList");
+
+        // Lógica para carregar a lista de tarefas específica com base na categoria
+        if (currentCategory === 'work') {
+          addTask("Trabalho 1");
+          addTask("Trabalho 2");
+        } else if (currentCategory === 'school') {
+          addTask("Estudar matemática");
+          addTask("Preparar apresentação");
+        }
+        // Adicione mais lógica conforme necessário para outras categorias
+      }
+
+      // Restante do seu script...
+    });
+  </script>
+</body>
+
+</html>

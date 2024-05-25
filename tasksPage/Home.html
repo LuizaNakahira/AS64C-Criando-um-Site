@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body id="espacadoBody">
+  <header id="espacadoHeader">
+    <span class="iconLogin">
+      <svg width="42" height="42">
+        <image href="../images/personal.svg" width="38" height="38"/>
+      </svg>
+    </span>
+    <!-- Botão de Sair -->
+    <button id="logoutButton">Sair</button>
+  </header>
+  <table class="homeTable">
+    <tr>
+      <td>
+        <p>
+          <span class="icon">
+            <svg width="52" height="52">
+              <image href="../images/today.svg" width="52" height="52"/>
+            </svg>
+          </span>
+          <span class="text" id="todayButton" data-list="today">Today</span>
+        </p>
+      </td>
+      <td>
+        <p>
+          <span class="icon">
+            <svg width="52" height="52">
+              <image href="../images/work.svg" width="52" height="52"/>
+            </svg>
+          </span>
+          <span class="text" id="workButton" data-list="work">Work</span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>
+          <span class="icon">
+            <svg width="52" height="52">
+              <image href="../images/planned.svg" width="52" height="52"/>
+            </svg>
+          </span>
+          <span class="text" id="plannedButton" data-list="planned">Planned</span>
+        </p>
+      </td>
+      <td>
+        <p>
+          <span class="icon">
+            <svg width="52" height="52">
+              <image href="../images/school.svg" width="52" height="52"/>
+            </svg>
+          </span>
+          <span class="text" id="schoolButton" data-list="school">School</span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>
+          <span class="icon">
+            <svg width="52" height="52">
+              <image href="../images/personal.svg" width="52" height="52"/>
+            </svg>
+          </span>
+          <span class="text" id="personalButton" data-list="personal">Personal</span>
+        </p>
+      </td>
+      <td>
+        <p>
+          <span class="icon">
+            <svg width="52" height="52">
+              <image href="../images/shopping.svg" width="52" height="52"/>
+            </svg>
+          </span>
+          <span class="text" id="shoppingButton" data-list="shopping">Shopping</span>
+        </p>
+      </td>
+    </tr>
+  </table>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Função para redirecionar para a página TaskList
+      function redirectToTasksList(category) {
+        localStorage.setItem('currentCategory', category);
+        window.location.href = '../tasksPage/TaskList.html';
+      }
+
+      // Obter os botões que desejamos adicionar comportamento de clique
+      const buttons = document.querySelectorAll('.homeTable .text');
+
+      // Adicionar evento de clique a cada botão
+      buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          const category = button.dataset.list;
+          redirectToTasksList(category);
+        });
+      });
+
+      // Adicionar evento de clique ao botão de Sair
+      document.getElementById('logoutButton').addEventListener('click', function() {
+        // Redirecionar para a tela de login
+        window.location.href = '../loginPage/Login.html';
+      });
+    });
+  </script>
+</body>
+</html>
+
