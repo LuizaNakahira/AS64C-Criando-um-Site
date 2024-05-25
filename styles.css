@@ -1,28 +1,26 @@
-
-  
-#espacadoHeader{
-  margin-bottom: 70px; 
+#espacadoHeader {
+  margin-bottom: 70px;
 }
 
-#espacadoHeaderHome{
-  margin-bottom: 70px; 
+#espacadoHeaderHome {
+  margin-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
 
 /* Cor de fundo e fonte padrão */
 body {
-  
-    font-family: Arial, sans-serif;
-    background-color: #e9f0fd;
-   
+
+  font-family: Arial, sans-serif;
+  background-color: #e9f0fd;
+
 }
 
-#espacadoBody{
+#espacadoBody {
   margin-top: 20px;
 }
-  
-.iconLogin{
+
+.iconLogin {
   display: flex;
   justify-content: flex-end;
 }
@@ -30,22 +28,23 @@ body {
 
 /* Estilo do container de login */
 .container {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   max-width: 300px;
   margin: 0 auto;
   border-radius: 30px;
   background-color: #d2e0fb;
-  align-items: center; 
-  padding: 35px; 
-  gap: 40px;   
+  align-items: center;
+  padding: 35px;
+  gap: 40px;
 }
 
 
 .inputGroup {
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  align-items: center;
+  gap: 30px;
 }
 
 /* Estilizando os Inpit */
@@ -56,43 +55,44 @@ body {
   border: none;
   width: 100%;
   padding: 15px 20px;
-  
+
 }
 
 #loginInput::placeholder,
 #senhaInput::placeholder,
 #confirmarInput::placeholder {
-  color: black; 
+  color: black;
 }
 
 /* Estilo do botão de login */
 #loginButton {
   border-radius: 40px;
-  border: none; 
-  background-color: #8EACCD; 
-  color: white; 
-  padding: 10px 40px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  border: none;
+  background-color: #8EACCD;
+  color: white;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #loginButton:hover {
-  background-color: #447fbe; 
+  background-color: #447fbe;
 }
 
 /* Estilo da tabela de homepage */
 .homeTable {
   margin: 0 auto;
   text-align: center;
-  border-spacing: 20px; 
+  border-spacing: 20px;
 }
 
 .homeTable td {
   background-color: white;
   width: auto;
-  text-align: center; 
+  text-align: center;
   padding: 0px 70px;
   border-radius: 20px;
+  
 }
 
 /* Alinhamento central para h1 */
@@ -101,12 +101,20 @@ h1 {
 }
 
 /* Estilos para elementos inline, como ícones e texto */
-.icon,
+.icon {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+
+}
+
 .text {
   vertical-align: middle;
   display: inline-block;
   font-size: 20px;
   text-align: center;
+  margin-left: 10px;
 }
 
 /* Estilo da lista */
@@ -118,8 +126,10 @@ ul {
 }
 
 #checkList {
-  display: grid;
-  gap: 10px; 
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 10px;
 }
 
 .modal {
@@ -131,8 +141,8 @@ ul {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-  
+  background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .modal-content {
@@ -148,19 +158,19 @@ ul {
   gap: 15px;
 }
 
-#adicionar{
+#adicionar {
   border-radius: 40px;
-  border: none; 
-  background-color: #8EACCD; 
-  color: white; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  border: none;
+  background-color: #8EACCD;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
   max-width: 200px;
   padding: 10px 30px;
   margin: 0 auto;
 }
 
-#checkListInput{
+#checkListInput {
   border-radius: 40px;
   border: none;
   padding: 15px 20px;
@@ -169,7 +179,7 @@ ul {
 }
 
 #checkListInput::placeholder {
-  color: black; 
+  color: black;
   text-align: left;
 }
 
@@ -177,7 +187,7 @@ ul {
   color: #aaa;
   font-size: 28px;
   font-weight: bold;
-  display: flex; 
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -199,41 +209,71 @@ a {
 }
 
 /*Container tasklist*/
-.containerTask{
-  display: flex; 
+.containerTask {
+  display: flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 30%;
+  height: 70vh;
   margin: 0 auto;
   border-radius: 30px;
   background-color: #d2e0fb;
-  align-items: center; 
-  padding: 30px 20px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  overflow: auto;
+}
+
+#scroll {
+  overflow: auto;
+  max-height: 40vh;
+  width: 60%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #8EACCD; 
+}
+
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
 }
 
 #adicionarModal,
-#deletar{
+#deletar {
   border-radius: 40px;
-  border: none; 
-  background-color: #8EACCD; 
-  color: white; 
-  padding: 10px 20px; 
-  cursor: pointer; 
-  transition: background-color 0.3s; 
+  border: none;
+  background-color: #8EACCD;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #adicionarModal:hover,
 #deletar:hover {
-  background-color: #447fbe; 
+  background-color: #447fbe;
 }
 
-.botoes{
+.botoes {
   display: flex;
   gap: 20px;
 }
 
-.modal-content-sucesso{
+.modal-content-sucesso {
   background-color: #FFFFFF;
-  max-width: 300px;
+  max-width: 350px;
+  height: 20vh;
   margin: 15% auto;
   padding: 5px 30px;
   border: 1px solid #888;
@@ -242,4 +282,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+#sucessoMsg {
+  font-size: 25px;
+  text-align: center;
 }

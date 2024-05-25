@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<header id="espacadoHeaderHome">
+  <span class="iconHome">
+    <svg width="42" height="42">
+    <image href="../images/Home.svg" width="38" height="38"/>
+    </svg>
+  </span>
+  <span class="iconHome">
+    <svg width="42" height="42">
+    <image href="../images/personal.svg" width="38" height="38"/>
+    </svg>
+  </span>
+</header>
+<body id="espacadoBody">
+  <div class="containerTask">
+    <div id="scroll">
+      <ul id="checkList">
+        <li><input type="checkbox" id="ex1"><label for="ex1">Lavar louça</label></li>
+        <li><input type="checkbox" id="ex2"><label for="ex2">Passear cachorro</label></li>
+        <li><input type="checkbox" id="ex3"><label for="ex3">Estudar</label></li>
+      </ul>
+    </div>
+    
+
+  <div class="botoes">
+    <button id="adicionarModal">Adicionar</button>
+    <button id="deletar">Deletar</button>
+  </div>
+    
+  </div>
+
+  <!-- Modal adicionar tarefa -->
+  <div id="modalAdicionar" class="modal">
+    <div class="modal-content">
+      <span class="closeModal">&times;</span>
+      <input type="text" id="checkListInput" placeholder="Tarefa: ">
+      <button id="adicionar">Adicionar</button>
+    </div>
+  </div>
+
+  <!-- Modal Sucesso -->
+  <div id="modalSucesso" class="modal">
+    <div class="modal-content-sucesso">
+
+      <span class="closeModal">&times;</span>
+
+      <span class="icon">
+        <svg width="20" height="20">
+          <image id="sucessoIcon" href="" width="20" height="20" /> <!-- href é manipulado no javascript -->
+        </svg>
+
+        <span id="sucessoMsg">Today</span>
+      </span>
+    
+      <p></p>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+
+</html>
