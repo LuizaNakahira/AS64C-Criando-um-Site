@@ -1,0 +1,164 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl360\slmult1\qj\fs24\lang22\par
+
+\pard\sa200\sl360\slmult1\qc\b Curso de Programa\'e7\'e3o Web Front-End: To-Do-List\par
+
+\pard\sa200\sl360\slmult1\qj\b0\par
+\b Introdu\'e7\'e3o\b0\par
+Bem-vindo ao curso de Programa\'e7\'e3o Web Front-End! Este curso foi projetado para te ensinar a construir um site do zero, utilizando HTML, CSS e JavaScript. Vamos gui\'e1-lo passo a passo, desde a configura\'e7\'e3o do ambiente de desenvolvimento at\'e9 a cria\'e7\'e3o de um site de lista de tarefas (to-do-list). Al\'e9m das videoaulas, voc\'ea encontrar\'e1 textos de apoio e dicas valiosas para programar com efici\'eancia e boas pr\'e1ticas.\par
+\par
+\b Objetivos do Curso\b0\par
+1. Baixar e configurar as IDEs.\par
+2. Aprender HTML.\par
+3. Aprender CSS.\par
+4. Aprender JavaScript.\par
+5. Construir um site completo de lista de tarefas (to-do-list).\par
+\par
+\b Estrutura do Curso\b0\par
+O curso est\'e1 dividido em m\'f3dulos, cada um focado em uma etapa espec\'edfica do desenvolvimento web. Abaixo, voc\'ea encontra os detalhes de cada m\'f3dulo, com explica\'e7\'f5es te\'f3ricas para apoiar seu aprendizado.\par
+\par
+\b Conte\'fado do Curso\par
+\b0\par
+\b Configura\'e7\'e3o das IDEs\b0\par
+\b 1. O que s\'e3o IDEs e por que us\'e1-las\par
+\b0 IDEs, ou Ambientes de Desenvolvimento Integrado, s\'e3o ferramentas essenciais para programadores. Elas combinam v\'e1rias fun\'e7\'f5es necess\'e1rias para o desenvolvimento de software em uma \'fanica interface. As principais vantagens de usar uma IDE incluem:\par
+\b Realce de Sintaxe: \b0 As IDEs destacam diferentes partes do c\'f3digo com cores espec\'edficas, ajudando a identificar erros de sintaxe rapidamente e tornando o c\'f3digo mais leg\'edvel.\par
+\b Autocompletar: \b0 Esta funcionalidade sugere e completa automaticamente palavras-chave e vari\'e1veis enquanto voc\'ea digita, economizando tempo e reduzindo erros.\par
+\b Debugging: \b0 As IDEs oferecem ferramentas integradas para depura\'e7\'e3o, permitindo que voc\'ea execute o c\'f3digo passo a passo, examine vari\'e1veis e encontre bugs de forma eficiente.\par
+\b Controle de Vers\'e3o: \b0 Muitas IDEs integram sistemas de controle de vers\'e3o como Git, facilitando a gest\'e3o de vers\'f5es do c\'f3digo e a colabora\'e7\'e3o com outros desenvolvedores.\par
+\b Interface Unificada: \b0 Com uma IDE, voc\'ea tem acesso a um ambiente de trabalho coeso onde todas essas ferramentas est\'e3o dispon\'edveis sem a necessidade de alternar entre diferentes programas.\par
+\par
+\b Analogia para Entender IDEs:\b0\par
+Tentar programar sem uma IDE \'e9 como construir uma casa com apenas um martelo e pregos. Usar uma IDE \'e9 como ter uma caixa de ferramentas completa, onde cada ferramenta est\'e1 facilmente acess\'edvel para a tarefa correta.\par
+\par
+\b 2. Instalando e navegando na IDE\par
+\b0    - Passo a Passo da Instala\'e7\'e3o e Navega\'e7\'e3o na IDE: Come\'e7ar com uma IDE envolve baix\'e1-la do site oficial e seguir as instru\'e7\'f5es de instala\'e7\'e3o. Ap\'f3s instalado, aprender a navegar pela interface \'e9 crucial. Voc\'ea aprender\'e1 a criar novos projetos, organizar arquivos em pastas e configurar prefer\'eancias. Por exemplo, ao criar um projeto, a IDE pedir\'e1 o nome do projeto e onde salv\'e1-lo. Saber como abrir, editar e salvar arquivos \'e9 essencial para aproveitar todos os recursos da IDE.\par
+\par
+\b Respons\'e1vel: \b0 Gustavo\par
+\par
+\b HTML\par
+\b0\par
+\b 1. Criando arquivos HTML, CSS e JavaScript\par
+Fundamentos de Arquivos Web\par
+\b0 A cria\'e7\'e3o de arquivos HTML, CSS e JavaScript \'e9 a base de qualquer site. Cada tipo de arquivo desempenha um papel espec\'edfico:\par
+\b HTML (HyperText Markup Language): \b0 Define a estrutura do conte\'fado da p\'e1gina. Ele cria a espinha dorsal do site, organizando o conte\'fado em elementos como par\'e1grafos, cabe\'e7alhos, listas e links.\par
+\b CSS (Cascading Style Sheets): \b0 Cuida da apar\'eancia e do layout da p\'e1gina. Ele estiliza o conte\'fado HTML, definindo cores, fontes, espa\'e7amentos e posicionamentos.\par
+\b JavaScript: \b0 Adiciona interatividade ao site. Ele permite criar comportamentos din\'e2micos, como responder a cliques de bot\'f5es, validar formul\'e1rios e manipular elementos da p\'e1gina.\par
+Manter esses arquivos separados \'e9 uma pr\'e1tica importante que melhora a organiza\'e7\'e3o e a manuten\'e7\'e3o do c\'f3digo. Ao separar o conte\'fado (HTML), a apresenta\'e7\'e3o (CSS) e a l\'f3gica (JavaScript), voc\'ea pode atualizar e modificar cada aspecto do site de forma independente e eficiente.\par
+\par
+\b Referenciando CSS e JavaScript no HTML:\b0\par
+Para conectar os arquivos CSS e JavaScript ao HTML, usamos as tags <link> e <script>:\par
+\b CSS: \b0 Para adicionar um arquivo CSS, usamos a tag <link> dentro do <head> do HTML.\par
+
+\pard\sa200\sl360\slmult1\qc <link rel="stylesheet" href="styles.css">\par
+
+\pard\sa200\sl360\slmult1\qj\b JavaScript: \b0 Para adicionar um arquivo JavaScript, usamos a tag <script>, geralmente no final do <body> para garantir que o HTML seja carregado antes de qualquer script.\par
+
+\pard\sa200\sl360\slmult1\qc <script src="scripts.js"></script>\par
+\par
+
+\pard\sa200\sl360\slmult1\qj\par
+\b 2. Elementos b\'e1sicos do HTML\b0\par
+Os elementos HTML s\'e3o como blocos de constru\'e7\'e3o que definem a estrutura e o conte\'fado da sua p\'e1gina web. Aqui est\'e3o alguns dos elementos mais comuns e suas fun\'e7\'f5es:\par
+\par
+\b - Cabe\'e7alhos (<h1> a <h6>): \b0 Usados para t\'edtulos e subt\'edtulos. <h1> \'e9 o cabe\'e7alho mais importante e <h6> o menos importante.\par
+
+\pard\sa200\sl360\slmult1\qc <h1>Este \'e9 um T\'edtulo Principal</h1>\par
+<h2>Este \'e9 um Subt\'edtulo</h2>\par
+\par
+
+\pard\sa200\sl360\slmult1\qj\b - Par\'e1grafos (<p>): \b0 Usados para blocos de texto.\par
+
+\pard\sa200\sl360\slmult1\qc <p>Este \'e9 um par\'e1grafo de exemplo.</p>\par
+\par
+
+\pard\sa200\sl360\slmult1\qj\b - Listas N\'e3o Ordenadas (<ul>) e Ordenadas (<ol>): \b0 Usadas para agrupar itens em uma lista. Os itens s\'e3o definidos com a tag <li>.\par
+<ul>\par
+ \tab  <li>Item da lista n\'e3o ordenada</li>\par
+ \tab  <li>Outro item</li>\par
+</ul>\par
+<ol>\par
+ \tab  <li>Item da lista ordenada</li>\par
+ \tab  <li>Outro item</li>\par
+</ol>\par
+\par
+\b Links (<a>): \b0 Usados para criar hyperlinks que navegam para outras p\'e1ginas ou sites.\par
+
+\pard\sa200\sl360\slmult1\qc <a href="https://www.exemplo.com">Clique aqui para visitar um site</a>\par
+\par
+
+\pard\sa200\sl360\slmult1\qj\b Imagens (<img>): \b0 Usadas para incorporar imagens na p\'e1gina.\par
+
+\pard\sa200\sl360\slmult1\qc <img src="imagem.jpg" alt="Descri\'e7\'e3o da imagem">\par
+\par
+
+\pard\sa200\sl360\slmult1\qj\b Hist\'f3rico do HTML e CSS:\b0\par
+Antes da introdu\'e7\'e3o do CSS, os estilos eram aplicados diretamente nos elementos HTML usando atributos como bgcolor, font, align, etc. Isso resultava em um c\'f3digo HTML muito confuso e dif\'edcil de manter. Com o CSS, a apresenta\'e7\'e3o do conte\'fado foi separada da estrutura, permitindo um c\'f3digo HTML mais limpo e sem\'e2ntico.\par
+\par
+\b 3. Constru\'e7\'e3o inicial do to-do-list\par
+\b0    - Constru\'e7\'e3o da Estrutura HTML: Come\'e7aremos a construir a estrutura do to-do-list. Isso inclui criar um formul\'e1rio para adicionar novas tarefas e uma lista onde as tarefas ser\'e3o exibidas. Usaremos elementos como `<form>`, `<input>`, `<button>` e `<ul>` ou `<ol>`. Um HTML bem estruturado \'e9 fundamental para uma p\'e1gina sem\'e2ntica e acess\'edvel.\par
+\par
+\b Respons\'e1vel: \b0 Gustavo\par
+\par
+\b CSS\par
+\b0\par
+\b 1. Estilizando a lista de tarefas\par
+\b0    - Introdu\'e7\'e3o ao CSS: CSS controla a apar\'eancia visual da p\'e1gina. Come\'e7aremos estilizando a lista de tarefas, definindo estilos para listas ordenadas (ol) e n\'e3o ordenadas (ul). CSS permite ajustar margens, espa\'e7amentos, bordas, fontes e tamanhos de texto. Por exemplo, para estilizar uma lista, podemos definir propriedades como `list-style-type`, `margin`, `padding` e `font-family`.\par
+\par
+\b 2. Estilizando itens da lista\par
+\b0    - Estiliza\'e7\'e3o Detalhada de Itens: Cada item da lista (li) pode ser estilizado individualmente. Utilizamos propriedades CSS como `margin`, `padding`, `border`, `background-color`, `font-size` e `color`. Isso inclui espa\'e7amentos entre itens, cores de fundo alternadas e fontes personalizadas.\par
+\par
+\b 3. Estilizando caixas de sele\'e7\'e3o\par
+\b0    - Estiliza\'e7\'e3o de Elementos Interativos: Caixas de sele\'e7\'e3o permitem marcar tarefas como conclu\'eddas. Utilizamos propriedades como `appearance`, `background-color`, `border`, e pseudo-classes como `:checked` para definir estilos diferentes para caixas marcadas e n\'e3o marcadas. Efeitos de hover e foco melhoram a experi\'eancia do usu\'e1rio.\par
+\par
+\b 4. Estilizando bot\'f5es de a\'e7\'e3o\par
+\b0    - Design de Bot\'f5es: Bot\'f5es de a\'e7\'e3o s\'e3o fundamentais para a interatividade do site. Utilizamos CSS para definir cores, tamanhos, bordas, e efeitos de hover e foco. Propriedades como `background-color`, `border-radius`, `padding` e `cursor` ajudam a criar bot\'f5es funcionais e atraentes.\par
+\par
+\b 5. Estilizando a entrada de texto\par
+\b0    - Customiza\'e7\'e3o de Campos de Entrada: A entrada de texto para adicionar novas tarefas deve ser estilizada. Utilizamos propriedades CSS para definir o tamanho, margens, bordas, e fontes. Propriedades como `width`, `height`, `border`, `padding`, e `font-family` garantem que a entrada de texto seja esteticamente agrad\'e1vel e f\'e1cil de usar.\par
+\par
+\b 6. Estilizando barra de progresso ou contador de tarefas\par
+\b0    - Feedback Visual com CSS: Barras de progresso ou contadores de tarefas fornecem feedback visual sobre o progresso do usu\'e1rio. Utilizamos CSS para definir a apar\'eancia desses elementos, ajustando cores, tamanhos e posicionamento.\par
+\par
+\b 7. Estilizando layout responsivo\par
+\b0    - Design Responsivo com CSS: Um layout responsivo se ajusta a diferentes tamanhos de tela. Utilizamos media queries (`@media`) para aplicar estilos espec\'edficos a diferentes resolu\'e7\'f5es de tela, ajustando tamanhos de fonte, espa\'e7amentos, e reorganizando elementos para garantir funcionalidade em qualquer dispositivo.\par
+\par
+\b 8. Estilizando anima\'e7\'f5es e transi\'e7\'f5es\par
+\b0    - Anima\'e7\'f5es e Transi\'e7\'f5es Suaves: Anima\'e7\'f5es e transi\'e7\'f5es melhoram a experi\'eancia do usu\'e1rio. Utilizamos propriedades CSS como `transition`, `animation`, `keyframes`, e `transform` para criar efeitos suaves ao adicionar, remover ou completar tarefas.\par
+\par
+\b 9. Estilizando outros elementos\par
+\b0    - Personaliza\'e7\'e3o de Elementos Adicionais: Outros elementos, como etiquetas de prioridade, notas ou datas, podem ser estilizados para melhorar a funcionalidade do to-do-list. Utilizamos CSS para ajustar cores, tamanhos e posicionamento.\par
+\par
+\b Respons\'e1veis: \b0 Luiza e Tami\par
+\par
+\b JavaScript\par
+\b0\par
+\b 1. Introdu\'e7\'e3o ao JavaScript\par
+\b0    - Hist\'f3ria e Import\'e2ncia do JavaScript: JavaScript \'e9 essencial para adicionar interatividade a sites. Criado em 1995, ele evoluiu para se tornar uma das linguagens mais populares. Permite a manipula\'e7\'e3o do DOM (Document Object Model), resposta a eventos do usu\'e1rio, e comunica\'e7\'e3o ass\'edncrona com servidores.\par
+\par
+\b 2. L\'f3gica do to-do-list: adi\'e7\'e3o e remo\'e7\'e3o de tarefas\par
+\b0    - Implementa\'e7\'e3o da L\'f3gica com JavaScript: Implementar a l\'f3gica do to-do-list envolve a manipula\'e7\'e3o de elementos HTML. Isso inclui adicionar novas tarefas e remover tarefas existentes. Utilizamos m\'e9todos como `document.querySelector`, `addEventListener`, `createElement` e `appendChild`.\par
+\par
+\b 3. Estiliza\'e7\'e3o din\'e2mica com JavaScript\par
+\b0    - Estiliza\'e7\'e3o Din\'e2mica e Personaliza\'e7\'e3o: JavaScript permite a aplica\'e7\'e3o de estiliza\'e7\'e3o din\'e2mica, respondendo a eventos do usu\'e1rio como cliques e hover. Utilizamos m\'e9todos como `classList.add`, `classList.remove`, e `setAttribute` para alterar classes e atributos de elementos HTML dinamicamente.\par
+\par
+\b Respons\'e1vel: \b0 Clara\par
+\par
+\b Boas Pr\'e1ticas de Programa\'e7\'e3o\par
+\b0\par
+\b Import\'e2ncia das Boas Pr\'e1ticas de Programa\'e7\'e3o: \b0 Seguir boas pr\'e1ticas de programa\'e7\'e3o \'e9 fundamental para garantir que o c\'f3digo seja f\'e1cil de entender, manter e expandir. A clareza e a legibilidade do c\'f3digo permitem que outros desenvolvedores compreendam e colaborem no projeto. Coment\'e1rios e documenta\'e7\'e3o s\'e3o cruciais para explicar a l\'f3gica e os detalhes t\'e9cnicos. Estruturar e modularizar o c\'f3digo facilita a manuten\'e7\'e3o e a escalabilidade, permitindo que novas funcionalidades sejam adicionadas sem comprometer a estabilidade do sistema.\par
+\par
+\b - Clareza e legibilidade do c\'f3digo: \b0 Escrever c\'f3digo f\'e1cil de ler e entender por outros desenvolvedores. Utilize indenta\'e7\'e3o, nomes de vari\'e1veis descritivos e mantenha o c\'f3digo limpo e organizado.\par
+\b - Coment\'e1rios e documenta\'e7\'e3o: \b0 Inclua coment\'e1rios que expliquem partes complexas do c\'f3digo e mantenha uma documenta\'e7\'e3o adequada.\par
+\b - Estrutura\'e7\'e3o e modulariza\'e7\'e3o do c\'f3digo: \b0 Divida o c\'f3digo em m\'f3dulos e fun\'e7\'f5es bem definidos. Cada m\'f3dulo ou fun\'e7\'e3o deve ter uma responsabilidade espec\'edfica.\par
+\b - Manuten\'e7\'e3o e escalabilidade: \b0 Escreva c\'f3digo f\'e1cil de manter e escalar. Evite duplica\'e7\'e3o de c\'f3digo e utilize padr\'f5es de design apropriados.\par
+\par
+\par
+\b Conclus\'e3o\par
+\b0\par
+Este curso proporcionar\'e1 a voc\'ea uma compreens\'e3o abrangente de como construir um site do zero utilizando as tecnologias web mais importantes. Ao final do curso, voc\'ea ser\'e1 capaz de planejar, desenvolver e estilizar um site funcional, seguindo as melhores pr\'e1ticas de programa\'e7\'e3o e utilizando ferramentas modernas de desenvolvimento web.\par
+\par
+Boa sorte e bons estudos!\par
+}
+ 
