@@ -69,10 +69,10 @@ Javascript:
    Explicação da estrutura básica de um to-do-list: 30 minutos
    Implementação da adição de tarefas usando JavaScript: 40 minutos
    Implementação da remoção de tarefas usando JavaScript: 50 minutos
-3. demonstrar como utilizar javascript para aplicar estilização dinâmica no to-do-list, como adição de classes e alteração de atributos em cliques, hover, etc.: 3 horas
+3. demonstrar como utilizar javascript para aplicar estilização dinâmica no to-do-list: 3 horas
    Introdução à estilização dinâmica com JavaScript: 30 minutos
-   Adição de classes e estilização baseada em eventos (cliques, hover, etc.): 1 hora e 10 minutos
-   Exemplos avançados de estilização dinâmica e personalização: 1 hora e 20 minutos
+  Estilização baseada em eventos (cliques, hover, etc.): 1 hora e 10 minutos
+   
 
 Durante todo o projeto, haverá atenção especial para a organização e utilização de boas práticas no código, explicando ao aluno
 como essas boas práticas fazem grande diferença no quesito de compartilhamento de tarefas e leitura de código.
